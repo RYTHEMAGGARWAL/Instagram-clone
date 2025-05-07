@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Instagram Profile page</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+</head>
+<body>
+       <!--sidebar code-->
+       <div class="sidebar">
+        <div class="logo">
+          <img
+            src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+            alt="Instagram"
+          />
+        </div>
+  
+        <div class="nav-menu">
+          <a href="#" class="nav-item">
+            <div class="nav-icon">
+              <svg
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z"
+                    fill="#000000"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="nav-text">Home</div>
+          </a>
+  
+          <a href="#" class="nav-item">
+            <div class="nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="nav-text">Search</div>
+          </a>
+  
+          <a href="#" class="nav-item">
+            <div class="nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-labelledby="exploreIconTitle"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+                color="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title id="exploreIconTitle">Explore</title>
+                  <polygon
+                    points="14.121 14.121 7.05 16.95 9.879 9.879 16.95 7.05"
+                  ></polygon>
+                  <circle cx="12" cy="12" r="10"></circle>
+                </g>
+              </svg>
+            </div>
+            <div class="nav-text">Explore</div>
+          </a>
+  
+          <a href="#" class="nav-item">
+            <div class="nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM17.4805 21.25C20.6354 19.3767 22.75 15.9353 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75H22C22.4142 22.75 22.75 22.4142 22.75 22C22.75 21.5858 22.4142 21.25 22 21.25H17.4805ZM12 6.75C11.5858 6.75 11.25 7.08579 11.25 7.5C11.25 7.91421 11.5858 8.25 12 8.25C12.4142 8.25 12.75 7.91421 12.75 7.5C12.75 7.08579 12.4142 6.75 12 6.75ZM9.75 7.5C9.75 6.25736 10.7574 5.25 12 5.25C13.2426 5.25 14.25 6.25736 14.25 7.5C14.25 8.74264 13.2426 9.75 12 9.75C10.7574 9.75 9.75 8.74264 9.75 7.5ZM7.5 11.25C7.08579 11.25 6.75 11.5858 6.75 12C6.75 12.4142 7.08579 12.75 7.5 12.75C7.91421 12.75 8.25 12.4142 8.25 12C8.25 11.5858 7.91421 11.25 7.5 11.25ZM5.25 12C5.25 10.7574 6.25736 9.75 7.5 9.75C8.74264 9.75 9.75 10.7574 9.75 12C9.75 13.2426 8.74264 14.25 7.5 14.25C6.25736 14.25 5.25 13.2426 5.25 12ZM16.5 11.25C16.0858 11.25 15.75 11.5858 15.75 12C15.75 12.4142 16.0858 12.75 16.5 12.75C16.9142 12.75 17.25 12.4142 17.25 12C17.25 11.5858 16.9142 11.25 16.5 11.25ZM14.25 12C14.25 10.7574 15.2574 9.75 16.5 9.75C17.7426 9.75 18.75 10.7574 18.75 12C18.75 13.2426 17.7426 14.25 16.5 14.25C15.2574 14.25 14.25 13.2426 14.25 12ZM12 15.75C11.5858 15.75 11.25 16.0858 11.25 16.5C11.25 16.9142 11.5858 17.25 12 17.25C12.4142 17.25 12.75 16.9142 12.75 16.5C12.75 16.0858 12.4142 15.75 12 15.75ZM9.75 16.5C9.75 15.2574 10.7574 14.25 12 14.25C13.2426 14.25 14.25 15.2574 14.25 16.5C14.25 17.7426 13.2426 18.75 12 18.75C10.7574 18.75 9.75 17.7426 9.75 16.5Z"
+                    fill="#1C274C"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="nav-text">Reels</div>
+          </a>
+  
+          <a href="#" class="nav-item">
+            <div class="nav-icon">
+              <svg
+                viewBox="0 0 192 192"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g
+                    stroke="#000000"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    clip-path="url(#a)"
+                  >
+                    <path
+                      d="M148.326 43.674c-28.899-28.899-75.753-28.899-104.652 0-25.014 25.014-28.377 63.481-10.087 92.112l-4.336 22.272c-.542 2.784 1.907 5.233 4.691 4.691l22.272-4.336c28.631 18.29 67.098 14.927 92.112-10.087 28.899-28.899 28.899-75.753 0-104.652Z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      d="m131.355 83.272-24.041 24.042-21.92-21.92-24.042 24.041"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#ffffff" d="M0 0h192v192H0z"></path>
+                    </clipPath>
+                  </defs>
+                </g>
+              </svg>
+            </div>
+            <div class="nav-text">Messages</div>
+          </a>
+  
+          <a href="#" class="nav-item">
+            <div class="nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="nav-text">Notifications</div>
+          </a>
+  
+          <a href="#" class="nav-item">
+            <div class="nav-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M12.75 9C12.75 8.58579 12.4142 8.25 12 8.25C11.5858 8.25 11.25 8.58579 11.25 9L11.25 11.25H9C8.58579 11.25 8.25 11.5858 8.25 12C8.25 12.4142 8.58579 12.75 9 12.75H11.25V15C11.25 15.4142 11.5858 15.75 12 15.75C12.4142 15.75 12.75 15.4142 12.75 15L12.75 12.75H15C15.4142 12.75 15.75 12.4142 15.75 12C15.75 11.5858 15.4142 11.25 15 11.25H12.75V9Z"
+                    fill="#1C274C"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.0574 1.25H11.9426C9.63424 1.24999 7.82519 1.24998 6.41371 1.43975C4.96897 1.63399 3.82895 2.03933 2.93414 2.93414C2.03933 3.82895 1.63399 4.96897 1.43975 6.41371C1.24998 7.82519 1.24999 9.63422 1.25 11.9426V12.0574C1.24999 14.3658 1.24998 16.1748 1.43975 17.5863C1.63399 19.031 2.03933 20.1711 2.93414 21.0659C3.82895 21.9607 4.96897 22.366 6.41371 22.5603C7.82519 22.75 9.63423 22.75 11.9426 22.75H12.0574C14.3658 22.75 16.1748 22.75 17.5863 22.5603C19.031 22.366 20.1711 21.9607 21.0659 21.0659C21.9607 20.1711 22.366 19.031 22.5603 17.5863C22.75 16.1748 22.75 14.3658 22.75 12.0574V11.9426C22.75 9.63423 22.75 7.82519 22.5603 6.41371C22.366 4.96897 21.9607 3.82895 21.0659 2.93414C20.1711 2.03933 19.031 1.63399 17.5863 1.43975C16.1748 1.24998 14.3658 1.24999 12.0574 1.25ZM3.9948 3.9948C4.56445 3.42514 5.33517 3.09825 6.61358 2.92637C7.91356 2.75159 9.62177 2.75 12 2.75C14.3782 2.75 16.0864 2.75159 17.3864 2.92637C18.6648 3.09825 19.4355 3.42514 20.0052 3.9948C20.5749 4.56445 20.9018 5.33517 21.0736 6.61358C21.2484 7.91356 21.25 9.62177 21.25 12C21.25 14.3782 21.2484 16.0864 21.0736 17.3864C20.9018 18.6648 20.5749 19.4355 20.0052 20.0052C19.4355 20.5749 18.6648 20.9018 17.3864 21.0736C16.0864 21.2484 14.3782 21.25 12 21.25C9.62177 21.25 7.91356 21.2484 6.61358 21.0736C5.33517 20.9018 4.56445 20.5749 3.9948 20.0052C3.42514 19.4355 3.09825 18.6648 2.92637 17.3864C2.75159 16.0864 2.75 14.3782 2.75 12C2.75 9.62177 2.75159 7.91356 2.92637 6.61358C3.09825 5.33517 3.42514 4.56445 3.9948 3.9948Z"
+                    fill="#1C274C"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="nav-text">Create</div>
+          </a>
+  
+          <a href="#" class="nav-item">
+            <div class="nav-icon">
+              <svg
+                viewBox="0 0 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>profile_round [#1342]</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Dribbble-Light-Preview"
+                      transform="translate(-140.000000, -2159.000000)"
+                      fill="#000000"
+                    >
+                      <g id="icons" transform="translate(56.000000, 160.000000)">
+                        <path
+                          d="M100.562548,2016.99998 L87.4381713,2016.99998 C86.7317804,2016.99998 86.2101535,2016.30298 86.4765813,2015.66198 C87.7127655,2012.69798 90.6169306,2010.99998 93.9998492,2010.99998 C97.3837885,2010.99998 100.287954,2012.69798 101.524138,2015.66198 C101.790566,2016.30298 101.268939,2016.99998 100.562548,2016.99998 M89.9166645,2004.99998 C89.9166645,2002.79398 91.7489936,2000.99998 93.9998492,2000.99998 C96.2517256,2000.99998 98.0830339,2002.79398 98.0830339,2004.99998 C98.0830339,2007.20598 96.2517256,2008.99998 93.9998492,2008.99998 C91.7489936,2008.99998 89.9166645,2007.20598 89.9166645,2004.99998 M103.955674,2016.63598 C103.213556,2013.27698 100.892265,2010.79798 97.837022,2009.67298 C99.4560048,2008.39598 100.400241,2006.33098 100.053171,2004.06998 C99.6509769,2001.44698 97.4235996,1999.34798 94.7348224,1999.04198 C91.0232075,1998.61898 87.8750721,2001.44898 87.8750721,2004.99998 C87.8750721,2006.88998 88.7692896,2008.57398 90.1636971,2009.67298 C87.1074334,2010.79798 84.7871636,2013.27698 84.044024,2016.63598 C83.7745338,2017.85698 84.7789973,2018.99998 86.0539717,2018.99998 L101.945727,2018.99998 C103.221722,2018.99998 104.226185,2017.85698 103.955674,2016.63598"
+                          id="profile_round-[#1342]"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="nav-text">Profile</div>
+          </a>
+  
+          <a href="#" class="nav-item more-item">
+            <div class="nav-icon">☰</div>
+            <div class="nav-text1">More</div>
+          </a>
+        </div>
+      </div>
+      <!--sidebar code ends-->
+
+
+
+
+        <!--profile code--> 
+        <section class="middle">
+        <div class="profile-container">
+            <div class="note-icon">Note...</div>
+            <div class="profile-pic">
+               
+                <img src="./Profile-Image1.jpg" alt="Profile-image1" class="profile-pic">
+            </div>
+            <div class="profile-info">
+                <div class="username">
+                    aggarwal_baniya
+                    <div>
+                        <button class="button">Edit profile</button>
+                        <button class="button">View archive</button>
+                        <button class="settings">⚙</button>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat"><span class="stat-number">19</span> posts</div>
+                    <div class="stat"><span class="stat-number">132</span> followers</div>
+                    <div class="stat"><span class="stat-number">138</span> following</div>
+                </div>
+                <div class="fullname">Rythem Aggarwal</div>
+                <div class="userhandle">
+                    <button class="userhandleicon">@ aggarwal_baniya</button>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="stories-container">
+            <div class="story">
+                <div class="story-pic-container">
+                    <img src="./Profile-Image4.jpg" alt="Story thumbnail" class="story-pic">
+                </div>
+                <div class="story-title">Shadi Masti</div>
+            </div>
+            
+            <div class="story">
+                <div class="story-pic-container">
+                    <img src="./Profile-Image5.jpg" alt="Story thumbnail" class="story-pic">
+                </div>
+                <div class="story-title">Cousin's Mastiii</div>
+            </div>
+            
+            <div class="story">
+                <div class="story-pic-container">
+                    <div class="add-story">+</div>
+                </div>
+                <div class="story-title">New</div>
+            </div>
+        </div>
+        <div class="border"></div>
+        <!--profile code ends--> 
+   
+
+        <!-- grid tabs start-->
+
+        <div class="tabs-container">
+            <a href="#" class="tab active"><span class="icon-grid"> ⊞ </span> POSTS</a>
+            <a href="#" class="tab"><span class="icon-video"> ▶ </span> REELS</a>
+            <a href="#" class="tab"><span class="icon-bookmark"> 🔖 </span> SAVED</a>
+            <a href="#" class="tab"><span class="icon-tag"> 🏷️ </span> TAGGED</a>
+        </div>
+    
+        <div class="posts-grid">
+            
+            <div class="post">
+                <img src="./Profile-Image2.jpg" alt="Black and white portrait">
+                <div class="post-overlay">
+                    <div class="likes"><span class="icon-heart"></span> 39</div>
+                    <div class="comments"><span class="icon-comment"></span> 15</div>
+                </div>
+            </div>
+    
+            
+            <div class="post">
+                <img src="./Profile-Image3.jpg" alt="Person in a blazer">
+                <div class="video-indicator"><span class="icon-video-play"></span></div>
+            </div>
+    
+            
+            <div class="post">
+                <img src="./Profile-Image4.jpg" alt="Person in a light jacket">
+            </div>
+    
+          
+            <div class="post">
+                <img src="./Profile-Image5.jpg" alt="Group photo">
+                <div class="video-indicator"><span class="icon-video-play"></span></div>
+            </div>
+    
+            <div class="post">
+                <img src="./Profile-Image6.jpg" alt="Multiple photos collage">
+                <div class="multi-indicator"><span class="icon-multi"></span></div>
+            </div>
+    
+            
+            <div class="post">
+                <img src="./Profile-Image7.jpg" alt="Multiple circle photos">
+                <div class="multi-indicator"><span class="icon-multi"></span></div>
+            </div>
+
+
+           
+             <div class="post">
+                <img src="./Profile-Image8.jpg" alt="Black and white portrait">
+                <div class="post-overlay">
+                    <div class="likes"><span class="icon-heart"></span> 39</div>
+                    <div class="comments"><span class="icon-comment"></span> 15</div>
+                </div>
+            </div>
+    
+           
+            <div class="post">
+                <img src="./Profile-Image1.jpg" alt="Person in a blazer">
+                <div class="video-indicator"><span class="icon-video-play"></span></div>
+            </div>
+    
+            
+            <div class="post">
+                <img src="./Profile-Image2.jpg" alt="Person in a light jacket">
+            </div>
+    
+           
+            <div class="post">
+                <img src="./Profile-Image3.jpg" alt="Group photo">
+                <div class="video-indicator"><span class="icon-video-play"></span></div>
+            </div>
+    
+            
+            <div class="post">
+                <img src="./Profile-Image4.jpg" alt="Multiple photos collage">
+                <div class="multi-indicator"><span class="icon-multi"></span></div>
+            </div>
+
+            <div class="post">
+                <img src="./Profile-Image5.jpg" alt="Multiple photos collage">
+                <div class="multi-indicator"><span class="icon-multi"></span></div>
+            </div>
+            <div class="post">
+                <img src="./Profile-Image6.jpg" alt="Person in a blazer">
+                <div class="video-indicator"><span class="icon-video-play"></span></div>
+            </div>
+    
+           
+            <div class="post">
+                <img src="./Profile-Image7.jpg" alt="Person in a light jacket">
+            </div>
+    
+            
+            <div class="post">
+                <img src="./Profile-Image8.jpg" alt="Group photo">
+                <div class="video-indicator"><span class="icon-video-play"></span></div>
+            </div>
+    
+
+        </div>
+        <!-- grid tabs ends-->
+        <div class="border"></div>
+
+<!--footer code-->
+
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#" class="footer-link">Meta</a>
+            <a href="#" class="footer-link">About</a>
+            <a href="#" class="footer-link">Blog</a>
+            <a href="#" class="footer-link">Jobs</a>
+            <a href="#" class="footer-link">Help</a>
+            <a href="#" class="footer-link">API</a>
+            <a href="#" class="footer-link">Privacy</a>
+            <a href="#" class="footer-link">Terms</a>
+            <a href="#" class="footer-link">Locations</a>
+            <a href="#" class="footer-link">Instagram Lite</a>
+            <a href="#" class="footer-link">Threads</a>
+            <a href="#" class="footer-link">Contact Uploading & Non-Users</a>
+            <a href="#" class="footer-link">Meta Verified</a>
+        </div>
+        
+        <div class="language-selector">
+            <select class="language-dropdown">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Português</option>
+                <option value="ru">Русский</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="zh">中文</option>
+            </select>
+            
+        </div>
+        
+        <div class="copyright">
+            © 2025 Made by Rythem Aggarwal just like a Instagram clone.
+        </div>
+    </footer>
+</section>
+<!--footer code ends-->
+
+</body>
+</html>
